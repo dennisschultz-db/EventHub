@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+ 
+    <!-- Handler that is invoked when component is ready -->
+    <!-- This method will subscribe to the platform event -->
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+
+    <!-- EventHub utility component -->
+    <!-- Provide a unique id name -->
+    <c:EventHub aura:id='SampleEventListenerHub'/>
+
+</aura:component>
