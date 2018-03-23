@@ -1,3 +1,5 @@
+// Singleton controller that manages CometD subscriptions for a
+// Salesforce Lighting App Page
 window.eventHub = (function () {
 
     // Local variables
@@ -8,6 +10,7 @@ window.eventHub = (function () {
 
     return {
 
+        // Enables debug logging in browser console
         setDebug: function (on) {
             debug = on;
         },
