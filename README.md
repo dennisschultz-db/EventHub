@@ -18,7 +18,7 @@ Deploy to SFDX using this button:
 
 [![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com)
 
-Deploy via unmanaged package using the link TBD.
+Deploy via unmanaged package using the link https://sfdc.co/EventHubPackage.
 
 ## Contents
 
