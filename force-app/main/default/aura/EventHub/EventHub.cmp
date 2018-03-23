@@ -1,5 +1,4 @@
-<aura:component implements="flexipage:availableForAllPageTypes"
-                access="global"
+<aura:component access="global"
                 controller="SessionController">
     
     <!-- Include cometd and the eventHub singleton code -->
