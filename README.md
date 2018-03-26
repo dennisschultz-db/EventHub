@@ -6,9 +6,9 @@ Only one CometD client can exist per page.  If you have more than one Lightning 
 
 `Exception during handling of messages  Unrecognized advice action handshake`
 
-Examining the network responses for the CometD requests, you will see something like
+Examining the network responses for the CometD requests, you will see something that contains **multiple-clients** like
 
-`[{"clientId":"11e12xxbcr6wt3rs6taa4pvpoz","advice":{"interval":2000,"*multiple-clients*":true,"reconnect":"retry","timeout":110000},"channel":"/meta/connect","id":"8","successful":true}]`
+`[{"clientId":"11e12xxbcr6wt3rs6taa4pvpoz","advice":{"interval":2000, "multiple-clients":true,"reconnect":"retry","timeout":110000},"channel":"/meta/connect","id":"8","successful":true}]`
 
 EventHub utilizes a static resource JavaScript library that establishes a singleton controller which ensures only one CometD client is created per page.  All subscriptions from all components on the page are then handled by that one client.
 
