@@ -1,5 +1,11 @@
 # EventHub
 
+---
+
+**UPDATE**: Since originally writing this component, Salesforce has introduced the lightning:empApi component which essentially does the same thing but is a method officially supported by Salesforce. (https://developer.salesforce.com/docs/component-library/bundle/lightning:empApi/documentation) I would suggest looking at the empApi component first. I chose not to delete this post because I know there are others that have build applications using EventHub in their applications.
+
+---
+
 Event Hub is a Salesforce Lightning Component that enables Lightning App Pages to establish multiple Platform Event subscriptions using a single CometD client.
 
 Only one CometD client can exist per page.  If you have more than one Lightning Component that subscribes to Platform Events on a page, you may end up with multiple CometD clients.  This generally results in the Chrome Console message
